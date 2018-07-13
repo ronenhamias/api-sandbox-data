@@ -1,43 +1,44 @@
 {
-        text: "<span class='brand-name icon node-icon'><span style='padding-right: 0px' class='text-white text-bold'>SCALE</span><span class='text-blue text-bold'>CUBE</span></span>",
-        id : "2",
-        type : "ORG",
-        backColor:"black",
-        nodes: [
+        "text": "<span class='brand-name icon node-icon'><span style='padding-right: 0px' class='text-white text-bold'>SCALE</span><span class='text-blue text-bold'>CUBE</span></span>",
+        "id" : "2",
+        "type" : "ORG",
+        "backColor":"black",
+        "nodes": [
             {
-                text: "API Gateway",
-                id : "2",
-                type : "API",
-                backColor:"black",
-                nodes: [
+                "text": "API Gateway",
+                "id" : "2",
+                "type" : "API",
+                "backColor":"black",
+                "nodes": [
                     {
-                        id : "3",
-                        text: "WebSocket Greeting Once",
-                        backColor:"black",
-                        data: {"q":"/greeting/one","sid":1,"d":"hello"}
+                        "id" : "3",
+                        "text": "WebSocket Greeting Once",
+                        "backColor":"black",
+                        "data": {"q":"/greeting/one","sid":1,"d":"hello"}
                     },{
-                        id : "4",
-                        text: "WebSocket Greeting Many",
-                        backColor:"black",
-                        data: {"q":"/greeting/many","sid":1,"d":"hello"}
+                        "id" : "4",
+                        "text": "WebSocket Greeting Many",
+                        "backColor":"black",
+                        "data": {"q":"/greeting/many","sid":1,"d":"hello"}
                     },
                     {
-                        id : "5",
-                        text: "WebSocket Complete Signal",
-                        backColor:"black",
-                        data: {"sid": 1, "sig": 3}
+                        "id" : "5",
+                        "text": "WebSocket Complete Signal",
+                        "backColor":"black",
+                        "data": {"sid": 1, "sig": 3}
                     },{
-                        id : "6",
-                        text: "RSocket Greeting Once",
-                        backColor:"black",
-                        data: { metadata : {"q": "/greeting/one"}, data:"hello" }
+                        "id" : "6",
+                        "text": "RSocket Greeting Once",
+                        "backColor":"black",
+                        "data": { "metadata" : {"q": "/greeting/one"}, "data":"hello" }
                     },{
-                        id : "7",
-                        text: "RSocket Greeting Many",
-                        backColor:"black",
-                        data: { metadata : {"q": "/greeting/many"}, data:"hello" }
+                        "id" : "7",
+                        "text": "RSocket Greeting Many",
+                        "backColor":"black",
+                        "data": { "metadata" : {"q": "/greeting/many"}, "data":"hello" }
                     }
                 ]
-            }
-        ]
-    }
+        }
+    ]
+ }
+	
