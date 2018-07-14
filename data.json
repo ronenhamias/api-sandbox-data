@@ -23,19 +23,34 @@
           "name": "api-gateway-1",
           "renderer": "focusedChild",
           "class": "normal"
-        },
-        {
+        },{
           "name": "api-gateway-2",
           "renderer": "focusedChild",
           "class": "normal"
         },
         {
-          "name": "MarketData-placeOrder-1",
+          "name": "Orders-1",
+          "renderer": "focusedChild",
+          "class": "normal"
+        },{
+          "name": "Orders-2",
           "renderer": "focusedChild",
           "class": "normal"
         },
         {
-          "name": "MarketData-placeOrder-1",
+          "name": "Matching-1",
+          "renderer": "focusedChild",
+          "class": "normal"
+        },{
+          "name": "Matching-2",
+          "renderer": "focusedChild",
+          "class": "normal"
+        },{
+          "name": "Fills-1",
+          "renderer": "focusedChild",
+          "class": "normal"
+        },{
+          "name": "Fills-2",
           "renderer": "focusedChild",
           "class": "normal"
         }
@@ -49,8 +64,7 @@
             "normal": 35598.906
           },
           "class": "normal"
-        },
-        {
+        },{
           "source": "INTERNET",
           "target": "api-gateway-2",
           "metrics": {
@@ -61,34 +75,95 @@
         },
         {
           "source": "api-gateway-1",
-          "target": "MarketData-placeOrder-1",
+          "target": "Orders-1",
           "metrics": {
             "danger": 116.524,
             "normal": 12598.906
           },
           "class": "normal"
-        },
-        {
-          "source": "api-gateway-1",
-          "target": "MarketData-placeOrder-2",
-          "metrics": {
-            "danger": 116.524,
-            "normal": 12598.906
-          },
-          "class": "normal"
-        },
-        {
+        },{
           "source": "api-gateway-2",
-          "target": "MarketData-placeOrder-1",
+          "target": "Orders-2",
           "metrics": {
             "danger": 116.524,
             "normal": 12598.906
           },
           "class": "normal"
-        },
-        {
-          "source": "api-gateway-2",
-          "target": "MarketData-placeOrder-2",
+        },{
+          "source": "Orders-1",
+          "target": "Matching-1",
+          "metrics": {
+            "danger": 116.524,
+            "normal": 12598.906
+          },
+          "class": "normal"
+        },{
+          "source": "Orders-2",
+          "target": "Matching-2",
+          "metrics": {
+            "danger": 116.524,
+            "normal": 12598.906
+          },
+          "class": "normal"
+        },{
+          "source": "Orders-2",
+          "target": "Matching-1",
+          "metrics": {
+            "danger": 116.524,
+            "normal": 12598.906
+          },
+          "class": "normal"
+        },{
+          "source": "Orders-1",
+          "target": "Matching-2",
+          "metrics": {
+            "danger": 116.524,
+            "normal": 12598.906
+          },
+          "class": "normal"
+        },{
+          "source": "Matching-1",
+          "target": "Fills-1",
+          "metrics": {
+            "danger": 116.524,
+            "normal": 12598.906
+          },
+          "class": "normal"
+        },{
+          "source": "Matching-2",
+          "target": "Fills-2",
+          "metrics": {
+            "danger": 116.524,
+            "normal": 12598.906
+          },
+          "class": "normal"
+        },{
+          "source": "Matching-2",
+          "target": "Fills-1",
+          "metrics": {
+            "danger": 116.524,
+            "normal": 12598.906
+          },
+          "class": "normal"
+        },{
+          "source": "Matching-1",
+          "target": "Fills-2",
+          "metrics": {
+            "danger": 116.524,
+            "normal": 12598.906
+          },
+          "class": "normal"
+        },{
+          "source": "Fills-1",
+          "target": "INTERNET",
+          "metrics": {
+            "danger": 116.524,
+            "normal": 12598.906
+          },
+          "class": "normal"
+        },{
+          "source": "Fills-2",
+          "target": "INTERNET",
           "metrics": {
             "danger": 116.524,
             "normal": 12598.906
