@@ -23,6 +23,11 @@
           "name": "proxy-prod",
           "renderer": "focusedChild",
           "class": "normal"
+        },
+        {
+          "name": "proxy-prod",
+          "renderer": "focusedChild",
+          "class": "normal"
         }
       ],
       "connections": [
