@@ -20,12 +20,17 @@
           "class": "normal"
         },
         {
-          "name": "proxy-prod-1",
+          "name": "api-gateway-1",
           "renderer": "focusedChild",
           "class": "normal"
         },
         {
-          "name": "proxy-prod-2",
+          "name": "greeting-service-1",
+          "renderer": "focusedChild",
+          "class": "normal"
+        },
+        {
+          "name": "greeting-service-2",
           "renderer": "focusedChild",
           "class": "normal"
         }
@@ -33,7 +38,7 @@
       "connections": [
         {
           "source": "INTERNET",
-          "target": "proxy-prod-1",
+          "target": "api-gateway-1",
           "metrics": {
             "danger": 116.524,
             "normal": 15598.906
@@ -41,8 +46,17 @@
           "class": "normal"
         },
         {
-          "source": "INTERNET",
-          "target": "proxy-prod-2",
+          "source": "api-gateway-1",
+          "target": "greeting-service-2",
+          "metrics": {
+            "danger": 116.524,
+            "normal": 15598.906
+          },
+          "class": "normal"
+        },
+        {
+          "source": "api-gateway-1",
+          "target": "greeting-service-2",
           "metrics": {
             "danger": 116.524,
             "normal": 15598.906
