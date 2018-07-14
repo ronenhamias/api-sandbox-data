@@ -10,7 +10,7 @@
     {
       "renderer": "region",
       "name": "us-east-1",
-      "maxVolume": 50000,
+      "maxVolume": 120000,
       "class": "normal",
       "updated": 1466838546805,
       "nodes": [
@@ -41,7 +41,7 @@
           "target": "api-gateway-1",
           "metrics": {
             "danger": 116.524,
-            "normal": 15598.906
+            "normal": 35598.906
           },
           "class": "normal"
         },
@@ -50,7 +50,7 @@
           "target": "greeting-service-1",
           "metrics": {
             "danger": 116.524,
-            "normal": 15598.906
+            "normal": 12598.906
           },
           "class": "normal"
         },
@@ -59,7 +59,7 @@
           "target": "greeting-service-2",
           "metrics": {
             "danger": 116.524,
-            "normal": 15598.906
+            "normal": 12598.906
           },
           "class": "normal"
         }
@@ -71,7 +71,7 @@
       "source": "INTERNET",
       "target": "us-east-1",
       "metrics": {
-        "normal": 26037.626,
+        "normal": 30000.626,
         "danger": 92.37
       },
       "notices": [
