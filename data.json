@@ -25,12 +25,17 @@
           "class": "normal"
         },
         {
-          "name": "greeting-service-1",
+          "name": "api-gateway-2",
           "renderer": "focusedChild",
           "class": "normal"
         },
         {
-          "name": "greeting-service-2",
+          "name": "MarketData-placeOrder-1",
+          "renderer": "focusedChild",
+          "class": "normal"
+        },
+        {
+          "name": "MarketData-placeOrder-1",
           "renderer": "focusedChild",
           "class": "normal"
         }
@@ -46,8 +51,17 @@
           "class": "normal"
         },
         {
+          "source": "INTERNET",
+          "target": "api-gateway-2",
+          "metrics": {
+            "danger": 116.524,
+            "normal": 35598.906
+          },
+          "class": "normal"
+        },
+        {
           "source": "api-gateway-1",
-          "target": "greeting-service-1",
+          "target": "MarketData-placeOrder-1",
           "metrics": {
             "danger": 116.524,
             "normal": 12598.906
@@ -56,7 +70,25 @@
         },
         {
           "source": "api-gateway-1",
-          "target": "greeting-service-2",
+          "target": "MarketData-placeOrder-2",
+          "metrics": {
+            "danger": 116.524,
+            "normal": 12598.906
+          },
+          "class": "normal"
+        },
+        {
+          "source": "api-gateway-2",
+          "target": "MarketData-placeOrder-1",
+          "metrics": {
+            "danger": 116.524,
+            "normal": 12598.906
+          },
+          "class": "normal"
+        },
+        {
+          "source": "api-gateway-2",
+          "target": "MarketData-placeOrder-2",
           "metrics": {
             "danger": 116.524,
             "normal": 12598.906
