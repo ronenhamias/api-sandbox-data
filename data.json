@@ -20,12 +20,12 @@
           "class": "normal"
         },
         {
-          "name": "proxy-prod",
+          "name": "proxy-prod-1",
           "renderer": "focusedChild",
           "class": "normal"
         },
         {
-          "name": "proxy-prod",
+          "name": "proxy-prod-2",
           "renderer": "focusedChild",
           "class": "normal"
         }
@@ -33,7 +33,16 @@
       "connections": [
         {
           "source": "INTERNET",
-          "target": "proxy-prod",
+          "target": "proxy-prod-1",
+          "metrics": {
+            "danger": 116.524,
+            "normal": 15598.906
+          },
+          "class": "normal"
+        },
+        {
+          "source": "INTERNET",
+          "target": "proxy-prod-2",
           "metrics": {
             "danger": 116.524,
             "normal": 15598.906
