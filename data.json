@@ -86,6 +86,23 @@
           },
           "class": "normal"
         },{
+          "source": "api-gateway-1",
+          "target": "Orders-2",
+          "metrics": {
+            "danger": 116.524,
+            "normal": 12598.906
+          },
+          "class": "normal"
+        },
+        {
+          "source": "api-gateway-2",
+          "target": "Orders-1",
+          "metrics": {
+            "danger": 116.524,
+            "normal": 12598.906
+          },
+          "class": "normal"
+        },{
           "source": "api-gateway-2",
           "target": "Orders-2",
           "metrics": {
