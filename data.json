@@ -76,6 +76,23 @@
             "normal": 35598.906
           },
           "class": "normal"
+        },{
+          "source": "api-gateway-1",
+          "target": "INTERNET",
+          "metrics": {
+            "danger": 116.524,
+            "normal": 35598.906
+          },
+          "class": "normal"
+        },
+        {
+          "source": "api-gateway-2",
+          "target": "INTERNET",
+          "metrics": {
+            "danger": 116.524,
+            "normal": 35598.906
+          },
+          "class": "normal"
         },
         {
           "source": "api-gateway-1",
@@ -183,7 +200,33 @@
         },
         {
           "source": "Fills-1",
-          "target": "INTERNET",
+          "target": "api-gateway-1",
+          "metrics": {
+            "danger": 116.524,
+            "normal": 12598.906
+          },
+          "class": "normal"
+        },
+        {
+          "source": "Fills-2",
+          "target": "api-gateway-1",
+          "metrics": {
+            "danger": 116.524,
+            "normal": 12598.906
+          },
+          "class": "normal"
+        },{
+          "source": "Fills-1",
+          "target": "api-gateway-2",
+          "metrics": {
+            "danger": 116.524,
+            "normal": 12598.906
+          },
+          "class": "normal"
+        },
+        {
+          "source": "Fills-2",
+          "target": "api-gateway-2",
           "metrics": {
             "danger": 116.524,
             "normal": 12598.906
