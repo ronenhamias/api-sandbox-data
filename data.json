@@ -47,7 +47,7 @@
         },
         {
           "source": "api-gateway-1",
-          "target": "greeting-service-2",
+          "target": "greeting-service-1",
           "metrics": {
             "danger": 116.524,
             "normal": 15598.906
