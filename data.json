@@ -146,42 +146,6 @@
             "normal": 12598.906
           },
           "class": "normal"
-        },
-        {
-          "source": "Matching-1",
-          "target": "Fills-1",
-          "metrics": {
-            "danger": 116.524,
-            "normal": 12598.906
-          },
-          "class": "normal"
-        },
-        {
-          "source": "Matching-2",
-          "target": "Fills-2",
-          "metrics": {
-            "danger": 116.524,
-            "normal": 12598.906
-          },
-          "class": "normal"
-        },
-        {
-          "source": "Matching-2",
-          "target": "Fills-1",
-          "metrics": {
-            "danger": 116.524,
-            "normal": 12598.906
-          },
-          "class": "normal"
-        },
-        {
-          "source": "Matching-1",
-          "target": "Fills-2",
-          "metrics": {
-            "danger": 116.524,
-            "normal": 12598.906
-          },
-          "class": "normal"
         }
       ]
     }
