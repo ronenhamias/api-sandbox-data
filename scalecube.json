@@ -15,7 +15,8 @@
                         "text": "WebSocket Greeting Once",
                         "backColor":"black",
                         "data": {"q":"/greeting/one","sid":1,"d":"hello"}
-                    },{
+                    },
+                    {
                         "id" : "4",
                         "text": "WebSocket Greeting Many",
                         "backColor":"black",
@@ -26,68 +27,72 @@
                         "text": "WebSocket Complete Signal",
                         "backColor":"black",
                         "data": {"sid": 1, "sig": 3}
-                    },{
+                    },
+                    {
                         "id" : "6",
                         "text": "RSocket Greeting Once",
                         "backColor":"black",
                         "data": { "metadata" : {"q": "/greeting/one"}, "data":"hello" }
-                    },{
+                    },
+                    {
                         "id" : "7",
                         "text": "RSocket Greeting Many",
                         "backColor":"black",
                         "data": { "metadata" : {"q": "/greeting/many"}, "data":"hello" }
                     }
                 ]
-        },{
+        },
+        {
 	     	"text": "Vizceral",
 		    "id" : "3",
             "type" : "API",
             "backColor":"black",
             "nodes": [
                 {
-                    "id" : "3",
+                    "id" : "3.1",
                     "text": "Listen",
                     "backColor":"black",
                     "data": {
-			    "metadata": { 
-				    "q": "/io.scalecube.vizceral/listen"
-			    }
-		    }
-                },{
-                    "id" : "3",
+    			        "metadata": { 
+    				        "q": "/io.scalecube.vizceral/listen"
+    			        }
+		            }
+                },
+                {
+                    "id" : "3.2",
                     "text": "Add Node to Region",
                     "backColor":"black",
                     "data": {
-			    "metadata": { 
-				    "q": "/io.scalecube.vizceral/addRegionNode"
-			    }, 
-			    "data" : {
-			     	"region":"US-EAST-1",
-				"name" :"api-gateway"
-			    }
-		    }
-                },{
-                    "id" : "3",
+        			    "metadata": { 
+        				    "q": "/io.scalecube.vizceral/addRegionNode"
+        			    }, 
+        			    "data" : {
+        			     	"region":"us-east-1",
+        				    "name" :"api-gateway"
+        			    }
+		            }
+                },
+                {
+                    "id" : "3.4",
                     "text": "Update Metric",
                     "backColor":"black",
                     "data": {
-			    "metadata": { 
-				    "q": "/io.scalecube.vizceral/addRegionNode"
-			    }, 
-			    "data" : {
-			     	"region": "US-EAST-1",
-				"name" : "api-gateway",				    
-				"source": "INTERNET",
-				"target": "api-gateway",
-				"metrics": {
-				    "normal":1000.00,
-			    	    "danger":20.00
-			         }
-			    }
-		    }
+    			        "metadata": { 
+    				        "q": "/io.scalecube.vizceral/addRegionNode"
+    			        }, 
+        			    "data" : {
+        			     	"region": "US-EAST-1",
+            				"name" : "api-gateway",				    
+            				"source": "INTERNET",
+            				"target": "api-gateway",
+            				"metrics": {
+            				    "normal":1000.00,
+            			    	"danger":20.00
+        			         }
+        			    }
+		            }
                 }
             ]
-	}
+	    }
     ]
  }
-	
