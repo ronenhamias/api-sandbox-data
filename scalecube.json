@@ -50,7 +50,7 @@
                     "backColor":"black",
                     "data": {
 			    "metadata": { 
-				    "q": "/io.scalecube.vizceral"
+				    "q": "/io.scalecube.vizceral/listen"
 			    }
 		    }
                 }
