@@ -53,9 +53,41 @@
 				    "q": "/io.scalecube.vizceral/listen"
 			    }
 		    }
+                },{
+                    "id" : "3",
+                    "text": "Add Node to Region",
+                    "backColor":"black",
+                    "data": {
+			    "metadata": { 
+				    "q": "/io.scalecube.vizceral/addRegionNode"
+			    }, 
+			    "data" : {
+			     	"region":"US-EAST-1",
+				"name" :"api-gateway"
+			    }
+		    }
+                },{
+                    "id" : "3",
+                    "text": "Update Metric",
+                    "backColor":"black",
+                    "data": {
+			    "metadata": { 
+				    "q": "/io.scalecube.vizceral/addRegionNode"
+			    }, 
+			    "data" : {
+			     	"region": "US-EAST-1",
+				"name" : "api-gateway",				    
+				"source": "INTERNET",
+				"target": "api-gateway"
+				"metrics": {
+				    "normal":1000.00,
+			    	    "danger":20.00
+			         }
+			    }
+		    }
                 }
             ]
-	    }
+	}
     ]
  }
 	
