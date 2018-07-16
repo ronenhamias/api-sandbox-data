@@ -38,7 +38,24 @@
                         "data": { "metadata" : {"q": "/greeting/many"}, "data":"hello" }
                     }
                 ]
-        }
+        },{
+	     	"text": "Vizceral",
+		    "id" : "3",
+            "type" : "API",
+            "backColor":"black",
+            "nodes": [
+                {
+                    "id" : "3",
+                    "text": "Listen",
+                    "backColor":"black",
+                    "data": {
+			    "metadata": { 
+				    "q": "/io.scalecube.vizceral"
+			    }
+		    }
+                }
+            ]
+	    }
     ]
  }
 	
