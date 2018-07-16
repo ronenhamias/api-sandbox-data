@@ -78,7 +78,7 @@
 			     	"region": "US-EAST-1",
 				"name" : "api-gateway",				    
 				"source": "INTERNET",
-				"target": "api-gateway"
+				"target": "api-gateway",
 				"metrics": {
 				    "normal":1000.00,
 			    	    "danger":20.00
