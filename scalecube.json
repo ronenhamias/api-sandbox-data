@@ -78,10 +78,10 @@
                     "backColor":"black",
                     "data": {
     			        "metadata": { 
-    				        "q": "/io.scalecube.vizceral/addRegionNode"
+    				        "q": "/io.scalecube.vizceral/updateMetric"
     			        }, 
         			    "data" : {
-        			     	"region": "US-EAST-1",
+        			     	"region": "us-east-1",
             				"name" : "api-gateway",				    
             				"source": "INTERNET",
             				"target": "api-gateway",
