@@ -69,7 +69,7 @@
 								"token": "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJUZW5hbnQxIiwic3ViIjoiMSIsIm5hbWUiOiJ0cmFkZXIxIn0.j9dCs63J4xtWfhctrXb5popLAl8ohSlMTJU3_vCrQHk",
 								"sourceIpAddress" : "127.0.0.1",
 								"orderType": "limit",
-								"side": "buy",
+								"side": "aaa",
 								"instanceId": "1",
 								"quantity": "5",
 								"price": "111",
