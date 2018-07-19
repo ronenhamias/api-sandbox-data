@@ -22,12 +22,12 @@
 							"sid": 1, 
 							"d": 
 							{
-								"instanceId": "03D3B04F127D0277DD30"
+								"instanceId": "A0A2A3C8FBE160A0A335"
 							}
 						}
                     },
 					{
-                        "id" : "1",
+                        "id" : "2",
                         "text": "Find Extended Instance",
                         "backColor":"black",
                         "data": 
@@ -36,12 +36,12 @@
 							"sid": 1, 
 							"d": 
 							{
-								"instanceId": "03D3B04F127D0277DD30"
+								"instanceId": "A0A2A3C8FBE160A0A335"
 							}
 						}
                     },
 					{
-                        "id" : "1",
+                        "id" : "3",
                         "text": "Save Instance",
                         "backColor":"black",
                         "data": 
@@ -57,7 +57,7 @@
 						}
                     },
 					{
-                        "id" : "1",
+                        "id" : "4",
                         "text": "Update Instance",
                         "backColor":"black",
                         "data": 
@@ -66,8 +66,8 @@
 							"sid": 1, 
 							"d": 
 							{
-								"instanceId": "03D3B04F127D0277DD30",
-								"instrumentId": "XAU",
+								"instanceId": "A0A2A3C8FBE160A0A335",
+								"instrumentId": "BTC",
 								"status": "modified",
 								"expiredAt": "2025-04-25T21:59:07.739"
 							}
