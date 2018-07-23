@@ -38,7 +38,7 @@
 							{
 								"instanceId": "A0A2A3C8FBE160A0A335"
 							}
-						}
+						} 
                     },
 					{
                         "id" : "3",
@@ -70,7 +70,7 @@
 								"instrumentId": "BTC",
 								"status": "modified",
 								"expiredAt": "2025-04-25T21:59:07.739"
-							}
+							} 
 						}
                     }
 					
@@ -85,137 +85,54 @@
 				[
                     {
                         "id" : "1",
-                        "text": "Place Buy Order",
+                        "text": "Instrument Creation",
                         "backColor":"black",
                         "data": 
 						{
-							"q": "/om2.exchange.orders/placeOrder",
+							"q": "/om2.exchange.instruments.InstrumentService/save",
 							"sid": 1, 
 							"d": 
-							{
-								"token": "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJUZW5hbnQxIiwic3ViIjoiMSIsIm5hbWUiOiJ0cmFkZXIxIn0.j9dCs63J4xtWfhctrXb5popLAl8ohSlMTJU3_vCrQHk",
-								"sourceIpAddress" : "127.0.0.1",
-								"orderType": "limit",
-								"side": "buy",
-								"instanceId": "1",
-								"quantity": 123,
-								"price": 1001,
-								"isClosePositionOrder" : true,
-								"requestTimestamp": "2018-04-25T21:59:07.739"
+							{ 
+								"instrumentId": "BTC", 
+								"name": "Bitcoin", 
+								"precision": 8, 
+								"status": "Active" 
 							}
 						}
                     },
 					{
-                        "id" : "2",
-                        "text": "Place Sell Order",
+                        "id" : "1",
+                        "text": "Find Instrument",
                         "backColor":"black",
                         "data": 
 						{
-							"q": "/om2.exchange.orders/placeOrder",
+							"q": "/om2.exchange.instruments.InstrumentService/find",
 							"sid": 1, 
 							"d": 
-							{
-								"token": "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJUZW5hbnQxIiwic3ViIjoiMSIsIm5hbWUiOiJ0cmFkZXIxIn0.j9dCs63J4xtWfhctrXb5popLAl8ohSlMTJU3_vCrQHk",
-								"sourceIpAddress" : "127.0.0.1",
-								"orderType": "limit",
-								"side": "sell",
-								"instanceId": "1",
-								"quantity": 5,
-								"price": 100,
-								"isClosePositionOrder" : true,
-								"requestTimestamp": "2018-04-30T21:59:07.739"
+							{ 
+								"instrumentId": "BTC" 
 							}
 						}
                     },
 					{
-                        "id" : "3",
-                        "text": "Place Order with invalid side position",
+                        "id" : "1",
+                        "text": "Update Instrument",
                         "backColor":"black",
                         "data": 
 						{
-							"q": "/om2.exchange.orders/placeOrder",
+							"q": "/om2.exchange.instruments.InstrumentService/update",
 							"sid": 1, 
 							"d": 
 							{
-								"token": "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJUZW5hbnQxIiwic3ViIjoiMSIsIm5hbWUiOiJ0cmFkZXIxIn0.j9dCs63J4xtWfhctrXb5popLAl8ohSlMTJU3_vCrQHk",
-								"sourceIpAddress" : "127.0.0.1",
-								"orderType": "limit",
-								"side": "aaa",
-								"instanceId": "1",
-								"quantity": "5",
-								"price": "111",
-								"isClosePositionOrder" : true,
-								"requestTimestamp": "2018-04-30T21:59:07.739"
+								"instrumentId": "BTC",
+								"name": "Euro",
+								"precision": 100,
+								"status": "example"
 							}
 						}
-                    },
-					{
-                        "id" : "4",
-                        "text": "Place Order with invalid instanceId",
-                        "backColor":"black",
-                        "data": 
-						{
-							"q": "/om2.exchange.orders/placeOrder",
-							"sid": 1, 
-							"d": 
-							{
-								"token": "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJUZW5hbnQxIiwic3ViIjoiMSIsIm5hbWUiOiJ0cmFkZXIxIn0.j9dCs63J4xtWfhctrXb5popLAl8ohSlMTJU3_vCrQHk",
-								"sourceIpAddress" : "127.0.0.1",
-								"orderType": "limit",
-								"side": "buy",
-								"instanceId": "QQQ",
-								"quantity": "5",
-								"price": "111",
-								"isClosePositionOrder" : true,
-								"requestTimestamp": "2018-04-30T21:59:07.739"
-							}
-						}
-					  },
-					  {
-                        "id" : "5",
-                        "text": "Place Order with invalid quantity",
-                        "backColor":"black",
-                        "data": 
-						{
-							"q": "/om2.exchange.orders/placeOrder",
-							"sid": 1, 
-							"d": 
-							{
-								"token": "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJUZW5hbnQxIiwic3ViIjoiMSIsIm5hbWUiOiJ0cmFkZXIxIn0.j9dCs63J4xtWfhctrXb5popLAl8ohSlMTJU3_vCrQHk",
-								"sourceIpAddress" : "127.0.0.1",
-								"orderType": "limit",
-								"side": "buy",
-								"instanceId": "1",
-								"quantity": "aa",
-								"price": "111",
-								"isClosePositionOrder" : true,
-								"requestTimestamp": "2018-04-30T21:59:07.739"
-							}
-						}
-					  },
-					{
-                        "id" : "6",
-                        "text": "Place Sell Order with invalid price",
-                        "backColor":"black",
-                        "data": 
-						{
-							"q": "/om2.exchange.orders/placeOrder",
-							"sid": 1, 
-							"d": 
-							{
-								"token": "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJUZW5hbnQxIiwic3ViIjoiMSIsIm5hbWUiOiJ0cmFkZXIxIn0.j9dCs63J4xtWfhctrXb5popLAl8ohSlMTJU3_vCrQHk",
-								"sourceIpAddress" : "127.0.0.1",
-								"orderType": "limit",
-								"side": "sell",
-								"instanceId": "1",
-								"quantity": 5,
-								"price": "aaa",
-								"isClosePositionOrder" : true,
-								"requestTimestamp": "2018-04-30T21:59:07.739"
-							}
-						}
-                    
                     }
+					
+					
 					
                 ]
 			},
