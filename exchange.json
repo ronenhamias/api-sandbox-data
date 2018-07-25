@@ -12,68 +12,76 @@
                 "backColor":"black",
                 "nodes": 
 				[
-                    {
-                        "id" : "1",
-                        "text": "Find Instance",
-                        "backColor":"black",
-                        "data": 
-						{
-							"q": "/om2.exchange.instruments.InstanceService/find",
-							"sid": 1, 
-							"d": 
-							{
-								"instanceId": "A0A2A3C8FBE160A0A335"
-							}
-						}
-                    },
 					{
-                        "id" : "2",
-                        "text": "Find Extended Instance",
-                        "backColor":"black",
-                        "data": 
-						{
-							"q": "/om2.exchange.instruments.InstanceService/findExtended",
-							"sid": 1, 
-							"d": 
+						"text": "Success Request",
+						"id" : "1",
+						"type" : "API",
+						"backColor":"black",
+						"nodes": 
+						[
 							{
-								"instanceId": "A0A2A3C8FBE160A0A335"
+								"id" : "1",
+								"text": "Find Instance",
+								"backColor":"black",
+								"data": 
+								{
+									"q": "/om2.exchange.instruments.InstanceService/find",
+									"sid": 1, 
+									"d": 
+									{
+										"instanceId": "A0A2A3C8FBE160A0A335"
+									}
+								}
+							},
+							{
+								"id" : "2",
+								"text": "Find Extended Instance",
+								"backColor":"black",
+								"data": 
+								{
+									"q": "/om2.exchange.instruments.InstanceService/findExtended",
+									"sid": 1, 
+									"d": 
+									{
+										"instanceId": "A0A2A3C8FBE160A0A335"
+									}
+								} 
+							},
+							{
+								"id" : "3",
+								"text": "Save Instance",
+								"backColor":"black",
+								"data": 
+								{
+									"q": "/om2.exchange.instruments.InstanceService/save",
+									"sid": 1, 
+									"d": 
+									{
+										"instrumentId": "BTC",
+										"status": "new",
+										"expiredAt": "2019-04-25T21:59:07.739"
+									}
+								}
+							},
+							{
+								"id" : "4",
+								"text": "Update Instance",
+								"backColor":"black",
+								"data": 
+								{
+									"q": "/om2.exchange.instruments.InstanceService/update",
+									"sid": 1, 
+									"d": 
+									{
+										"instanceId": "A0A2A3C8FBE160A0A335",
+										"instrumentId": "BTC",
+										"status": "modified",
+										"expiredAt": "2025-04-25T21:59:07.739"
+									} 
+								}
 							}
-						} 
-                    },
-					{
-                        "id" : "3",
-                        "text": "Save Instance",
-                        "backColor":"black",
-                        "data": 
-						{
-							"q": "/om2.exchange.instruments.InstanceService/save",
-							"sid": 1, 
-							"d": 
-							{
-								"instrumentId": "BTC",
-								"status": "new",
-								"expiredAt": "2019-04-25T21:59:07.739"
-							}
-						}
-                    },
-					{
-                        "id" : "4",
-                        "text": "Update Instance",
-                        "backColor":"black",
-                        "data": 
-						{
-							"q": "/om2.exchange.instruments.InstanceService/update",
-							"sid": 1, 
-							"d": 
-							{
-								"instanceId": "A0A2A3C8FBE160A0A335",
-								"instrumentId": "BTC",
-								"status": "modified",
-								"expiredAt": "2025-04-25T21:59:07.739"
-							} 
-						}
-                    }
-					
+						]
+					}	
                 ]
 			},
 			{
