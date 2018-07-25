@@ -13,7 +13,7 @@
                 "nodes": 
 				[
 					{
-						"text": "Success Request",
+						"text": "Success Requests",
 						"id" : "1",
 						"type" : "API",
 						"backColor":"black",
@@ -81,7 +81,109 @@
 								}
 							}
 						]
-					}	
+					},
+{
+						"text": "Bad Requests",
+						"id" : "1",
+						"type" : "API",
+						"backColor":"black",
+						"nodes": 
+						[
+							{
+								"id" : "1",
+								"text": "Find Instance - Not-exist",
+								"backColor":"black",
+								"data": 
+								{
+									"q": "/om2.exchange.instruments.InstanceService/find",
+									"sid": 1, 
+									"d": 
+									{
+										"instanceId": "Not-exist"
+									}
+								}
+							},
+							{
+								"id" : "2",
+								"text": "Find Extended Instance - Not-exist",
+								"backColor":"black",
+								"data": 
+								{
+									"q": "/om2.exchange.instruments.InstanceService/findExtended",
+									"sid": 1, 
+									"d": 
+									{
+										"instanceId": "Not-exist"
+									}
+								} 
+							},
+							{
+								"id" : "3",
+								"text": "Save Instance - Instrument Not-exist",
+								"backColor":"black",
+								"data": 
+								{
+									"q": "/om2.exchange.instruments.InstanceService/save",
+									"sid": 1, 
+									"d": 
+									{
+										"instrumentId": "NotExist",
+										"status": "new",
+										"expiredAt": "2019-04-25T21:59:07.739"
+									}
+								}
+							},
+							{
+								"id" : "3",
+								"text": "Save Instance - invalid status",
+								"backColor":"black",
+								"data": 
+								{
+									"q": "/om2.exchange.instruments.InstanceService/save",
+									"sid": 1, 
+									"d": 
+									{
+										"instrumentId": "BTC",
+										"status": "invalid",
+										"expiredAt": "2019-04-25T21:59:07.739"
+									}
+								}
+							},
+							{
+								"id" : "3",
+								"text": "Save Instance - invalid date",
+								"backColor":"black",
+								"data": 
+								{
+									"q": "/om2.exchange.instruments.InstanceService/save",
+									"sid": 1, 
+									"d": 
+									{
+										"instrumentId": "BTC",
+										"status": "new",
+										"expiredAt": "20190425T21:59:07.739"
+									}
+								}
+							},
+							{
+								"id" : "4",
+								"text": "Update Instance - template",
+								"backColor":"black",
+								"data": 
+								{
+									"q": "/om2.exchange.instruments.InstanceService/update",
+									"sid": 1, 
+									"d": 
+									{
+										"instanceId": "A0A2A3C8FBE160A0A335",
+										"instrumentId": "BTC",
+										"status": "modified",
+										"expiredAt": "2025-04-25T21:59:07.739"
+									} 
+								}
+							}
+						]
+					}						
                 ]
 			},
 			{
