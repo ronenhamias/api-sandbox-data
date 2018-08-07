@@ -572,7 +572,7 @@
 									[
 										{
 											"id" : "1",
-											"text": "UserId Duplication",
+											"text": "Find not-exist UserId",
 											"backColor":"black",
 											"data": 
 												{
@@ -580,7 +580,7 @@
 													"sid": 1, 
 													"d": 
 													{
-														"internalUserId": "07502175-ae5c-4d15-b25c-256f3737e947"
+														"internalUserId": "07502175ae5c4d1525c256f3737e947"
 													}
 												}
 										}
