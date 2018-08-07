@@ -396,39 +396,56 @@
                 "backColor":"black",
                 "nodes": 
 				[
-                    {
-                        "id" : "1",
-                        "text": "User Creation",
-                        "backColor":"black",
-                        "data": 
+					{
+						"text": "Success Requests",
+						"id" : "1",
+						"type" : "API",
+						"backColor":"black",
+						"nodes": 
+						[
 						{
-							"q": "/om2.exchange.users.service.UserService/create",
-							"sid": 1, 
-							"d": 
-							{
-								"userId": "100", 
-								"currency": "EUR", 
-								"ipAddress": "127.0.0.1"
-							}
-						}
+							"id" : "1",
+							"text": "User Creation",
+							"backColor":"black",
+							"data": 
+								{
+									"q": "/om2.exchange.users.service.UserService/create",
+									"sid": 1, 
+									"d": 
+									{
+										"userId": "100", 
+										"currency": "EUR", 
+										"ipAddress": "127.0.0.1"
+									}
+								}
+						}		
+						]
                     },
-					 {
-                        "id" : "1",
-                        "text": "User Creation - UserId Duplication",
-                        "backColor":"black",
-                        "data": 
-						{
-							"q": "/om2.exchange.users.service.UserService/create",
-							"sid": 1, 
-							"d": 
+					{
+						"text": "Success Requests",
+						"id" : "1",
+						"type" : "API",
+						"backColor":"black",
+						"nodes": 
+						[
 							{
-								"userId": "1", 
-								"currency": "EUR", 
-								"ipAddress": "127.0.0.1"
+							"id" : "1",
+							"text": "User Creation - UserId Duplication",
+							"backColor":"black",
+							"data": 
+								{
+									"q": "/om2.exchange.users.service.UserService/create",
+									"sid": 1, 
+									"d": 
+									{
+										"userId": "1", 
+										"currency": "EUR", 
+										"ipAddress": "127.0.0.1"
+									}
+								}
 							}
-						}
-                    }
-					
+						]
+					}
                 ]
 			}
 		]
