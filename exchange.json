@@ -422,7 +422,7 @@
 						]
                     },
 					{
-						"text": "Success Requests",
+						"text": "Bad Requests",
 						"id" : "1",
 						"type" : "API",
 						"backColor":"black",
@@ -441,6 +441,67 @@
 										"userId": "1", 
 										"currency": "EUR", 
 										"ipAddress": "127.0.0.1"
+									}
+								}
+							},
+							{
+							"id" : "1",
+							"text": "User Creation -  without required object",
+							"backColor":"black",
+							"data": 
+								{
+									"q": "/om2.exchange.users.service.UserService/create",
+									"sid": 1, 
+									"d": 
+									{
+										
+									}
+								}
+							},
+							{
+							"id" : "1",
+							"text": "User Creation -  without userId",
+							"backColor":"black",
+							"data": 
+								{
+									"q": "/om2.exchange.users.service.UserService/create",
+									"sid": 1, 
+									"d": 
+									{
+										"currency": "BTC",
+										"ipAddress": "127.0.0.1"
+									}
+								}
+							},
+							{
+							"id" : "1",
+							"text": "User Creation -  with undefined key values in the object",
+							"backColor":"black",
+							"data": 
+								{
+									"q": "/om2.exchange.users.service.UserService/create",
+									"sid": 1, 
+									"d": 
+									{
+										"userId": null,
+										"currency": null,
+										"ipAddress": null
+									}
+								}
+							},
+							{
+							"id" : "1",
+							"text": "User Creation -  with boolean values",
+							"backColor":"black",
+							"data": 
+								{
+									"q": "/om2.exchange.users.service.UserService/create",
+									"sid": 1, 
+									"d": 
+									{
+										"userId": true,
+										"currency": false,
+										"ipAddress": true
 									}
 								}
 							}
