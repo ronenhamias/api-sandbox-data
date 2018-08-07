@@ -82,7 +82,7 @@
 							}
 						]
 					},
-{
+					{
 						"text": "Bad Requests",
 						"id" : "1",
 						"type" : "API",
@@ -397,117 +397,198 @@
                 "nodes": 
 				[
 					{
-						"text": "Success Requests",
+						"text": "Create User",
 						"id" : "1",
 						"type" : "API",
 						"backColor":"black",
 						"nodes": 
 						[
-						{
+							{
+							"text": "Success Requests",
 							"id" : "1",
-							"text": "User Creation",
+							"type" : "API",
 							"backColor":"black",
-							"data": 
-								{
-									"q": "/om2.exchange.users.service.UserService/create",
-									"sid": 1, 
-									"d": 
+							"nodes": 
+							[
+							{
+								"id" : "1",
+								"text": "User Creation",
+								"backColor":"black",
+								"data": 
 									{
-										"userId": "100", 
-										"currency": "EUR", 
-										"ipAddress": "127.0.0.1"
+										"q": "/om2.exchange.users.service.UserService/create",
+										"sid": 1, 
+										"d": 
+										{
+											"userId": "100", 
+											"currency": "EUR", 
+											"ipAddress": "127.0.0.1"
+										}
 									}
-								}
-						}		
+							}		
+							]
+							},
+							{
+								"text": "Bad Requests",
+								"id" : "1",
+								"type" : "API",
+								"backColor":"black",
+								"nodes": 
+								[
+									{
+									"id" : "1",
+									"text": "UserId Duplication",
+									"backColor":"black",
+									"data": 
+										{
+											"q": "/om2.exchange.users.service.UserService/create",
+											"sid": 1, 
+											"d": 
+											{
+												"userId": "1", 
+												"currency": "EUR", 
+												"ipAddress": "127.0.0.1"
+											}
+										}
+									},
+									{
+									"id" : "1",
+									"text": "Request without required object",
+									"backColor":"black",
+									"data": 
+										{
+											"q": "/om2.exchange.users.service.UserService/create",
+											"sid": 1, 
+											"d": 
+											{
+												
+											}
+										}
+									},
+									{
+									"id" : "1",
+									"text": "Request without userId",
+									"backColor":"black",
+									"data": 
+										{
+											"q": "/om2.exchange.users.service.UserService/create",
+											"sid": 1, 
+											"d": 
+											{
+												"currency": "BTC",
+												"ipAddress": "127.0.0.1"
+											}
+										}
+									},
+									{
+									"id" : "1",
+									"text": "User Creation -  with undefined key values in the object",
+									"backColor":"black",
+									"data": 
+										{
+											"q": "/om2.exchange.users.service.UserService/create",
+											"sid": 1, 
+											"d": 
+											{
+												"userId": null,
+												"currency": null,
+												"ipAddress": null
+											}
+										}
+									},
+									{
+									"id" : "1",
+									"text": "User Creation -  with boolean values",
+									"backColor":"black",
+									"data": 
+										{
+											"q": "/om2.exchange.users.service.UserService/create",
+											"sid": 1, 
+											"d": 
+											{
+												"userId": true,
+												"currency": false,
+												"ipAddress": true
+											}
+										}
+									},
+									{
+									"id" : "1",
+									"text": "User Creation -  with any additonal key and value",
+									"backColor":"black",
+									"data": 
+										{
+											"q": "/om2.exchange.users.service.UserService/create",
+											"sid": 1, 
+											"d": 
+											{
+												"userId": "2",
+												"currency": "BTC",
+												"ipAddress": "127.0.0.1",
+												"newValue": "Random"
+											}
+										}
+									}
+								]
+							}
 						]
-                    },
+					},
 					{
-						"text": "Bad Requests",
+						"text": "Find User",
 						"id" : "1",
 						"type" : "API",
 						"backColor":"black",
 						"nodes": 
 						[
 							{
-							"id" : "1",
-							"text": "User Creation - UserId Duplication",
-							"backColor":"black",
-							"data": 
-								{
-									"q": "/om2.exchange.users.service.UserService/create",
-									"sid": 1, 
-									"d": 
-									{
-										"userId": "1", 
-										"currency": "EUR", 
-										"ipAddress": "127.0.0.1"
-									}
-								}
+									"text": "Success Requests",
+									"id" : "1",
+									"type" : "API",
+									"backColor":"black",
+									"nodes": 
+									[
+										{
+											"id" : "1",
+											"text": "Find User",
+											"backColor":"black",
+											"data": 
+												{
+													"q": "/om2.exchange.users.service.UserService/find",
+													"sid": 1, 
+													"d": 
+													{
+														"internalUserId": "07502175-ae5c-4d15-b25c-256f3737e947"
+													}
+												}
+										}
+									]
 							},
 							{
-							"id" : "1",
-							"text": "User Creation -  without required object",
-							"backColor":"black",
-							"data": 
-								{
-									"q": "/om2.exchange.users.service.UserService/create",
-									"sid": 1, 
-									"d": 
-									{
-										
-									}
-								}
-							},
-							{
-							"id" : "1",
-							"text": "User Creation -  without userId",
-							"backColor":"black",
-							"data": 
-								{
-									"q": "/om2.exchange.users.service.UserService/create",
-									"sid": 1, 
-									"d": 
-									{
-										"currency": "BTC",
-										"ipAddress": "127.0.0.1"
-									}
-								}
-							},
-							{
-							"id" : "1",
-							"text": "User Creation -  with undefined key values in the object",
-							"backColor":"black",
-							"data": 
-								{
-									"q": "/om2.exchange.users.service.UserService/create",
-									"sid": 1, 
-									"d": 
-									{
-										"userId": null,
-										"currency": null,
-										"ipAddress": null
-									}
-								}
-							},
-							{
-							"id" : "1",
-							"text": "User Creation -  with boolean values",
-							"backColor":"black",
-							"data": 
-								{
-									"q": "/om2.exchange.users.service.UserService/create",
-									"sid": 1, 
-									"d": 
-									{
-										"userId": true,
-										"currency": false,
-										"ipAddress": true
-									}
-								}
+									"text": "Bad Requests",
+									"id" : "1",
+									"type" : "API",
+									"backColor":"black",
+									"nodes": 
+									[
+										{
+											"id" : "1",
+											"text": "UserId Duplication",
+											"backColor":"black",
+											"data": 
+												{
+													"q": "/om2.exchange.users.service.UserService/find",
+													"sid": 1, 
+													"d": 
+													{
+														"internalUserId": "07502175-ae5c-4d15-b25c-256f3737e947"
+													}
+												}
+										}
+									]
 							}
 						]
 					}
-                ]
+				]
 			}
 		]
  }
