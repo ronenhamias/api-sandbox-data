@@ -269,7 +269,7 @@
 								"side": "buy",
 								"instanceId": "656238A6389DDDA05E59",
 								"quantity": 123,
-								"price": 1001,
+								"price": 100,
 								"isClosePositionOrder" : true,
 								"requestTimestamp": "2018-07-25T21:59:07.739"
 							}
