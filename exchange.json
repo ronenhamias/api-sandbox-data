@@ -450,7 +450,7 @@
 								"data": 
 								{
 									"q": "/om2.exchange.userTrade/orderFilledEvents",
-									"sid": 1, 
+									"sid": 100, 
 									"d": 
 									{
 										"userId": "1",
@@ -604,7 +604,7 @@
 								"data": 
 								{
 									"q": "/om2.exchange.userTrade/positionEvents",
-									"sid": 1, 
+									"sid": 200, 
 									"d": 
 									{
 										"userId": "1"
