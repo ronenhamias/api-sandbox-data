@@ -612,7 +612,7 @@
 								}
 							}
 						]
-					}	
+					},	
 					{
 						"text": "Bad Requests",
 						"id" : "1",
